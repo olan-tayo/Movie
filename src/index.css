@@ -1,3 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: 'DMSans-bold';
+    src: url('./fonts/dm-sans/DMSans-Bold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'DMSans-medium';
+    src: url('./fonts/dm-sans/DMSans-Medium.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'DMSans-regular';
+    src: url('./fonts/dm-sans/DMSans-Regular.woff') format('woff');
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
