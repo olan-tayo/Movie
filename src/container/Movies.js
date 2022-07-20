@@ -70,7 +70,7 @@ const Movies = () => {
   }, [])
 
   return (
-    <div className="">
+    <div className="w-full">
       <div>
         {' '}
         {/* NAV SECTION */}
@@ -100,7 +100,7 @@ const Movies = () => {
           </form>
         </div>
         {/* MOVIE SECTION */}
-        <div className="">
+        <div className="w-full">
           {/* MOVIE CATEGORY ONE SECTION */}
           <div className="md:mt-[18px] lg:mt-[18px] md:mb-[48px] lg:mb-[48px]">
             {' '}
