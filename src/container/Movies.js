@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import cogoToast from 'cogo-toast'
 import { DebounceInput } from 'react-debounce-input'
-import logo from '../assets/Logo.svg'
 import '../App.css'
 import Nav from '../components/nav'
 
