@@ -22,7 +22,7 @@ const Movies = () => {
 
   const handleSearchedMovie = (search) => {
     axios
-      .get(`http://www.omdbapi.com/?s=${search}&type=movie&apikey=549ec055`)
+      .get(`https://www.omdbapi.com/?s=${search}&type=movie&apikey=549ec055`)
       .then((response) => {
         if (response.data.Error) {
           setMovies([])
@@ -36,7 +36,7 @@ const Movies = () => {
 
   const handleSearchedSeries = (search) => {
     axios
-      .get(`http://www.omdbapi.com/?s=${search}&type=series&apikey=549ec055`)
+      .get(`https://www.omdbapi.com/?s=${search}&type=series&apikey=549ec055`)
       .then((response) => {
         if (response.data.Error) {
           setSeries([])
@@ -49,7 +49,7 @@ const Movies = () => {
 
   const handleMovies = () => {
     axios
-      .get('http://www.omdbapi.com/?s=all&type=movie&apikey=549ec055')
+      .get('https://www.omdbapi.com/?s=all&type=movie&apikey=549ec055')
       .then((response) => {
         setMovies(response.data.Search)
       })
@@ -58,7 +58,7 @@ const Movies = () => {
 
   const handleSeries = () => {
     axios
-      .get('http://www.omdbapi.com/?s=all&type=series&apikey=549ec055')
+      .get('https://www.omdbapi.com/?s=all&type=series&apikey=549ec055')
       .then((response) => {
         setSeries(response.data.Search)
       })
